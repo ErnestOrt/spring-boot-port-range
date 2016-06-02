@@ -19,10 +19,10 @@ public abstract class ApplicationStarter extends WebMvcConfigurerAdapter {
 
     private static Logger logger = LoggerFactory.getLogger(ApplicationStarter.class);
 
-    @Value("${server.port.max:-1}")
+    @Value("${port.range.max:-1}")
     private int maxPort;
 
-    @Value("${server.port.min:-1}")
+    @Value("${port.range.min:-1}")
     private int minPort;
 
     @Value("${server.port:-1}")
